@@ -10,11 +10,12 @@ class App extends React.Component {
 			roobots: robots,
 			searchfield: "",
 		};
+		this.onSearchChange = this.onSearchChange.bind(this);
 	}
 
-	onSearchChange = (event) => {
+	onSearchChange(event) {
 		console.log(event.target.value);
-	};
+	}
 
 	render() {
 		return (
@@ -22,7 +23,7 @@ class App extends React.Component {
 				<h1>HoboFiends!</h1>
 				<SearchBox
 					searchChange={this.onSearchChange}
-					onChange={this.onSearchChange.bind(this)}
+					//onChange={this.searchChange}
 				/>
 				<CardList robots={this.state.roobots} />
 			</div>
