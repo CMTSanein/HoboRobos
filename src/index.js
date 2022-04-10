@@ -1,19 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Card from "./Card";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "tachyons";
-import { robots } from "./robots.js";
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 root.render(
 	<React.StrictMode>
-		<div>
-			<App />
-		</div>
+		<App />
 	</React.StrictMode>
 );
 
